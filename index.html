@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+
+    
+
+
+</head>
+<body>
+
+
+    
+    <div class="container">
+        <h1>Simple Average Finder</h1>
+
+        <input type="number" id="score1" min="0" max="100" placeholder="Quiz Score 1">
+        <input type="number" id="score2" min="0" max="100" placeholder="Quiz Score 2">
+
+        <button py-click="compute_average">Compute</button>
+
+        <p id="result"></p>
+        <p id="average"></p>
+        
+    </div>
+
+    <!-- Link to Python file -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
